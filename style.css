@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centralFooter > span {
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.centralFooter > span:last-of-type {
+    margin-right: 0px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration: line-through;
+}
