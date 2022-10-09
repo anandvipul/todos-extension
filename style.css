@@ -1,6 +1,26 @@
+@import url(assets/fonts/fonts.css);
+
+
+body {
+    font-family: Roboto, sans-serif;
+    color: white;
+    background-color: black;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+.title {
+    margin: 1rem 0;
+    font-size: 40px;
+    
+}
+
+h1 {
+    font-weight: 100;
+    letter-spacing: 0.2em;
 }
 
 .container {
@@ -33,4 +53,18 @@ ul {
 
 .strike {
     text-decoration: line-through;
+}
+
+.input-field {
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 4rem;
+}
+
+input::placeholder {
+    opacity: 0.3;
 }

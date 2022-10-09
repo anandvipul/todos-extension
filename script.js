@@ -147,6 +147,7 @@ let clear = document.querySelector(`span.clear`);
 clear.addEventListener('click', () => {
     let arr = sortData(tasksDictionaryArray, 'clear');
     tasksDictionaryArray = [...arr];
+    updateLocalStorage(tasksDictionaryArray);
     updateUI(tasksDictionaryArray);
 });
 
