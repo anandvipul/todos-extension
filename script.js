@@ -32,7 +32,7 @@ function updateUI(arr) {
 
     //
     let spanRemaining = document.createElement('span');
-    spanRemaining.innerText = `10 Minutes spanRemaining`;
+    spanRemaining.innerText = `10 Minutes Remaining`;
     spanRemaining.classList.add('timeRemaining');
 
     //
