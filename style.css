@@ -1,5 +1,9 @@
 @import url(assets/fonts/fonts.css);
 
+html {
+    font-size: 16px;
+}
+
 
 body {
     font-family: Roboto, sans-serif;
@@ -30,6 +34,7 @@ h1 {
 .taskItem {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer {
@@ -87,3 +92,13 @@ input[type="checkbox"]{
     width:3em;
     height:3em;
     }
+
+.title-input {
+    width: 100%;
+    display: inline-block;
+}
+
+.timeRemaining {
+    font-size: 0.5em;
+    vertical-align: bottom;
+}

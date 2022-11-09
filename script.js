@@ -28,11 +28,20 @@ function updateUI(arr) {
 
     spanCheckDone.append(inputCheckBox);
 
+
+
+    //
+    let spanRemaining = document.createElement('span');
+    spanRemaining.innerText = `10 Minutes spanRemaining`;
+    spanRemaining.classList.add('timeRemaining');
+
+    //
     let spanValue = document.createElement("span");
     spanValue.classList.add("task");
     spanValue.innerText = elem.taskName;
 
     li.append(spanCheckDone);
+    li.append(spanRemaining);
     li.append(spanValue);
 
     taskContainer.append(li);
@@ -153,3 +162,8 @@ clear.addEventListener('click', () => {
 
 
 updateUI(JSON.parse(localStorage[`todo`]));
+
+let inputField = document.querySelector('input[type=text]');
+
+
+console.log(inputField);
